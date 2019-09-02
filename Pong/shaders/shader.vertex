@@ -1,0 +1,15 @@
+#shader vertex
+#version 330 core
+
+layout( location = 0 ) in vec4 a_position;
+
+uniform mat4 u_MVP[30];
+
+flat out int instance_id;
+
+void main()
+{
+	mat4 mvp = u_MVP[ gl_InstanceID ];
+	gl_Position = mvp * a_position;
+	instance_id = gl_InstanceID;
+};
