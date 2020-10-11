@@ -209,6 +209,8 @@ std::string Shader::parseShader( const std::string& file_path, GLuint shader_typ
 	std::stringstream buffer;
 	buffer << in_file.rdbuf();
 
+	in_file.close();
+
 	return buffer.str();
 }
 

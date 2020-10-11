@@ -23,6 +23,7 @@ SDL_Window* GLWindow::getWindow() const
 	return window_.get();
 }
 
+
 //void GLWindow::handleEvents( EventHandler& handler ) 
 //{
 //	switch( e.window.event )
