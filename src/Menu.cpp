@@ -96,27 +96,27 @@ void Menu::handleInput( const Uint8* keyboard_state )
 			{
 				case ( VERY_EASY ): // AI is Braindead and slow
 				{
-					ai_properties_ = { 4.0f, 1.0f };
+					ai_properties_ = { 1.0f, 1.0f };
 					break;
 				}
 				case( EASY ): // AI is slightly smarter and Faster
 				{
-					ai_properties_ = { 5.0f, 1.10f };
+					ai_properties_ = { 1.5f, 1.10f };
 					break;
 				}
 				case( MEDIUM ): // AI is faster
 				{
-					ai_properties_ = { 5.0f, 1.20f };
+					ai_properties_ = { 2.0f, 1.20f };
 					break;
 				}
 				case( HARD ): // AI is Smarter
 				{
-					ai_properties_ = { 7.0f, 1.20f };
+					ai_properties_ = { 4.0f, 1.30f };
 					break;
 				}
 				case( IMPOSSIBLE ): // AI is Fast and Smart almost Impossible to win
 				{
-					ai_properties_ = { Entity::PLAYER_SPEED, 1.50f };
+					ai_properties_ = { Entity::PLAYER_SPEED, 1.40f };
 					break;
 				}
 			}
