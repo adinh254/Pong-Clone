@@ -1,0 +1,15 @@
+#shader vertex
+#version 330 core
+
+layout( location = 0 ) in vec4 a_position; // Position coordinates attribute
+layout( location = 1 ) in vec2 a_tex_coords; // Texture coordiates attribute
+
+out vec2 tex_coords;
+
+uniform mat4 mvp;
+
+void main()
+{
+	gl_Position = mvp * a_position;
+	tex_coords = a_tex_coords;
+}

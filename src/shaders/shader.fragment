@@ -1,0 +1,12 @@
+#shader fragment
+#version 330 core
+
+flat in int instance_id;
+out vec4 frag_color;
+
+uniform vec4 u_Color[30];
+
+void main()
+{
+	frag_color = u_Color[ instance_id ];
+};
